@@ -5,7 +5,7 @@ categories:
   - Blog
 tags:
   - Blog
-last_modified_at: 2020-07-06T00:00:00-01:00
+last_modified_at: 2020-07-06T00:00:00-02:00
 ---
 (개인약속)
 categories : 대분류 / tags : 소분류
@@ -31,6 +31,8 @@ input()
 - 형식
 ```
 
+***
+
 * 음식
     * 밀가루
         * 라면
@@ -61,6 +63,8 @@ input()
         - 라면
 ```
 
+***
+
 1. 다른
 2. 형식
 
@@ -68,6 +72,8 @@ input()
 1. 다른
 2. 형식
 ```
+
+***
 
 - 강조하는법
 
@@ -85,6 +91,8 @@ __는__
 ~~법~~
 ```
 
+***
+
 # h1
 ```
 # h1
@@ -109,6 +117,8 @@ __는__
 ```
 ###### h6
 ```
+
+***
 
 - 인용문구
 > 인용문구 1.
@@ -126,12 +136,21 @@ __는__
 >>> 인용문구 3.
 ```
 
+***
+
 - 코드인용
+
+function test(){
+    console.log("hello");
+}
+
 ```
 function test(){
     console.log("hello");
 }
 ```
+
+***
 
 - 수평선만들기
 
@@ -148,6 +167,8 @@ function test(){
 - - -
 ---------------------------------------
 ```
+
+***
 
 - 링크
 
@@ -168,6 +189,8 @@ function test(){
 
 <https://google.com>
 
+***
+
 - 이미지 삽입
 
 ![설명](https://fifabell.github.io/assets/images/jji_tiger_logo.jpg "썸네일"){: .align-center}
@@ -176,7 +199,10 @@ function test(){
 ![설명](https://fifabell.github.io/assets/images/jji_tiger_logo.jpg "썸네일"){: .align-center}
 ```
 
+***
+
 - 표 만들기
+
 | 항목 | 가격 | 개수 |
 |:----:|:----:|:----|
 | 라면 | 800원 | 10개 |
