@@ -9,7 +9,7 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "연도별 포스트"
+  - title: "Posts"
     url: /posts/
   
       
