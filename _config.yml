@@ -97,7 +97,7 @@ analytics:
 # Site Author
 author:
   name             : "정종인"
-  avatar           : "/assets/images/itsme.jepg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/itsme.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "어제보다 나은 오늘을. <br> 블로그에 잘못된 내용은 태클 적극 부탁드립니다."
   location         : "Busan, Republic of Korea"
   email            : "fifabell@naver.com"
