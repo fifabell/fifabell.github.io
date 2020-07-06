@@ -7,6 +7,9 @@ tags:
   - Blog
 last_modified_at: 2020-07-06T00:00:00-01:00
 ---
+(개인약속)
+categories : 대분류
+tags : 소분류
 
 YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다.
 이 글의 제목은 {{ page.title }}이고
