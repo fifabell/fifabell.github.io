@@ -1,3 +1,8 @@
+---
+permalink: /categories/
+title: "Categories"
+---
+
 안녕하세요.
 
 ```python
