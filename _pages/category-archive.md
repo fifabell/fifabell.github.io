@@ -10,7 +10,7 @@ author_profile: true
 ```python
 _val = input()
 def welcome(_val):
-    print(_val + " to my home")
+    print(_val + " to my blog")
 
 welcome(_val)
 ```
