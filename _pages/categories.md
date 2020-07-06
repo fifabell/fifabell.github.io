@@ -1,6 +1,8 @@
 ---
-permalink: /categories/
 title: "Categories"
+layout: categories
+permalink: /categories/
+author_profile: true
 ---
 
 안녕하세요.
