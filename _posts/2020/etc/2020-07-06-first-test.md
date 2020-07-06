@@ -1,6 +1,9 @@
 ---
 title:  "github.io 블로그 시작하기"
 excerpt: "GitHub Blog 테스트용 입니다."
+toc: true
+toc_sticky: true # 화면 넘어갈때 고정 여부
+# toc_label: "페이지 주요 목차" 를 직접 입력할 수 있다.
 categories:
   - Blog
 tags:
