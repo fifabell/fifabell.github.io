@@ -140,7 +140,7 @@ sudo service apache2 start
 apache2 기본 webserver는 80이므로
 ip주소:80으로 접속하면 정상적으로 작동하는 걸 알 수 있다.
 
-<!-- ![Apache it works!](/assets/images/prj01_ApacheWorks.png) -->
+
 
 
 # # 참조 사이트
