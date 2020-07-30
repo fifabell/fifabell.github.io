@@ -123,7 +123,7 @@ sudo systemctl status tomcat9
 Tomcat 기본 webserver는 8080이므로
 ip주소:8080으로 접속하면 정상적으로 작동하는 걸 알 수 있다.
 
-![Tomcat it works!](/assets/images/prj01_TomcatWorks.png)
+<!-- ![Tomcat it works!](/assets/images/prj01_TomcatWorks.png) -->
 
 ## 3) apache2 (Webserver, 정적)
 > _더 나은 성능과 기능을 위해 apache를 웹서버로 사용하는 게 더 낫다._
@@ -140,7 +140,7 @@ sudo service apache2 start
 apache2 기본 webserver는 80이므로
 ip주소:80으로 접속하면 정상적으로 작동하는 걸 알 수 있다.
 
-![Apache it works!](/assets/images/prj01_ApacheWorks.png)
+<!-- ![Apache it works!](/assets/images/prj01_ApacheWorks.png) -->
 
 
 # # 참조 사이트
