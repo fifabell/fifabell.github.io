@@ -7,7 +7,7 @@ toc_sticky: true # 화면 넘어갈때 고정 여부
 categories:
   - Project01
 tag:
-  - 서버환경구축
+  - Server Setting
   - server
   - aws
 last_modified_at: 2020-07-30T18:00:00-20:00
