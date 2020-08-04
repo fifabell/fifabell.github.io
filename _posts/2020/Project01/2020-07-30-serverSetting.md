@@ -17,6 +17,8 @@ last_modified_at: 2020-07-30T18:00:00-20:00
 
 웹 프로젝트에서 서버환경구축은 기본이자 시작이다.
 
+<br>
+
 # 2. step by step
 
 ## 1) 하드웨어(Hardware)
@@ -30,6 +32,8 @@ amazon에서 제공하는 서버로 구축해보도록 하겠다.
 aws(Amazon Web Services)에 접속하면 `EC2`라는 서버구축 가능한 ui가 있다.<br>
 기본적으로 해당 프로젝트는 따끈따끈한 `ubuntu 20.04`를 사용하도록 하겠다. <br>
 aws 내의 기타 보안 설정 및 ssh 접속방법은 생략한다.
+
+<br>
 
 # 3. webServer & WAS
 
