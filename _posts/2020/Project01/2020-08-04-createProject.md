@@ -13,5 +13,5 @@ last_modified_at: 2020-08-04T20:00:00-24:00
 ---
 
 # spring boot
-> spring boot는 spring 프레임워크를 시작하기 쉬운 초기화라고 생각하면 된다.
-> setting이 기본적으로 다 잘 되어있음.
+
+.
