@@ -16,7 +16,7 @@ last_modified_at: 2020-08-28T21:00:00+03:00
 
 Interpreter의 사전적 해석 : __통역사__ <br>
 
-> `문장을 해석`할 때 사용하는 패턴. 
+> `문장을 해석`할 때 사용하는 패턴. <br>
 > 해석기, 즉 한 언어에서 문들을 평가하는 방법을 규정하는 디자인 패턴이다.
 
 <br>
@@ -28,6 +28,11 @@ Interpreter의 사전적 해석 : __통역사__ <br>
 ## 1) UML
 
 ![interpreterUML](/assets/images/interpreterUML.png)
+
+
+추상적인 표현을 client가 구문을 이용하여 구체적인 표현들을 정의한다.
+
+<br>
 
 ## 2) 역할
 
@@ -45,8 +50,8 @@ ex ) 2 add 3 <br>
 
 ## 1) 문제
 and, or을 이용하여 interpreter pattern을 구현하고자 한다.<br>
-① Rule: Robert and John are male <br>
-② Rule: Julie is a married women <br><br>
+① Rule: "Robert" and "John" are male (Or)<br>
+② Rule: "Julie" is a "married" women (And)<br><br>
  
 Expression 인터페이스를 이용해<br>
 TerminalExpression, AndExpression, OrExpression 클래스를 재정의하고,<br>
