@@ -8,7 +8,7 @@ categories:
   - DesignPattern
 tag:
   - Interpreter Pattern
-last_modified_at: 2020-08-28T21:00:00+03:00
+last_modified_at: 2020-08-12T21:00:00+03:00
 ---
 <br>
 
@@ -63,7 +63,7 @@ Expression객체(isMale,isMarriedWoman)를 생성하고 함수를 생성해보�
 ![UML](/assets/images/interpreter_pattern_uml.jpg)
 
 ## 3) 역할
-위 UML를 참조하여 아래 여섯 개의 클래스 및 인터페이스를 구현해보아라.
+위 UML를 참조하여 아래 다섯 개의 클래스 및 인터페이스를 구현해보아라.
 
 ```
 ● Expression 인터페이스 - context 매개변수를 포함하는 boolean type의 interpret 함수를 갖고있다.
