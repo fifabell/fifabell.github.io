@@ -67,10 +67,12 @@ Expression객체(isMale,isMarriedWoman)를 생성하고 함수를 생성해보�
 
 ```
 ● Expression 인터페이스 - context 매개변수를 포함하는 boolean type의 interpret 함수를 갖고있다.
+
 아래 3개의 클래스는 Expression인터페이스를 재정의하는 클래스
 ● TerminalExpression 클래스 - data 매개변수를 이용하여 생성자로 초기화한다.
 ● AndExpression 클래스 - interpret함수 재정의시 생성자에 의해 초기화한 두 매개변수를 interpret 함수안에서 and 연산과정을 return 해준다.
 ● OrExpression 클래스 - interpret함수 재정의시 생성자에 의해 초기화한 두 매개변수를 interpret 함수안에서 or 연산과정을 return 해준다.
+
 ● Main 클래스 - 
 ① TerminalExpression,OrExpression클래스를 이용해 "Robert","John"를 Expression 형으로 객체를 생성한다.
 ② TerminalExpression,AndExpression클래스를 이용해 "julie","married"를 Expression 형으로 객체를 생성한다.
