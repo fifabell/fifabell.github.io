@@ -148,7 +148,15 @@ intent.putExtra("custom",cust);
 LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
 ```
 
-## 참고)
+# 3. 알림창 띄우기
+
+## 1) Alert
+
+## 2) Notification 띄우기
+
+
+
+# 참고)
 - post로 바로 보낼 때 서버토큰 api 키
 ![19](/assets/images/firebase/19.png)
 
