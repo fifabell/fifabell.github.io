@@ -115,6 +115,8 @@ Notification 구성에 필요한 요소들을 받아 처리하는 함수.<br>
 
 ```java
 //in MainActivity.java
+static String str = "";
+
 private void registerReceiver() { // woww라는  BroadCastReceiver 생성 2)
         LocalBroadcastManager.getInstance(this)
                 .registerReceiver(mBR, new IntentFilter("woww"));
@@ -127,6 +129,9 @@ BroadcastReceiver mBR = new BroadcastReceiver() { // 4)
         String cust = intent.getStringExtra("cust"); // receive cust
         Log.d("ttt",msg+cust);
         // textView.setText(msg+cust); // ui변경 안됨.
+        str = msg+cust;
+        textView.setText(str); // static으로 선언된 변수에 넣어주면 변경됨.
+
     }
 };
 
