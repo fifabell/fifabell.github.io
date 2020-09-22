@@ -179,11 +179,35 @@ private void registerReceiver() {
     LocalBroadcastManager.getInstance(this)
             .registerReceiver(mReceiver, new IntentFilter("woww"));
 }
+
+// 알림 수신 브로드캐스트 리시버
+BroadcastReceiver mReceiver = new BroadcastReceiver() {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        mMsg = intent.getStringExtra("inBroadMessage");
+    }
+};
+
 ```
 
 ## 2) 4-2 참고 
 
-## 3) 
+## 3) 값 받기
+
+4 진행 후 오면 됨.
+`MainActivity.java`
+```java
+public class MainActivity extends BaseActivity {
+//mMsg 쓰면 됨
+//BaseActivity 에 전역함수 설정되어있음. static String mMsg;
+```
+
+`SubActivity.java`
+```java
+public class SubActivity extends BaseActivity {
+//mMsg 쓰면 됨
+```
+
 
 # 4. 알림창 띄우기
 
