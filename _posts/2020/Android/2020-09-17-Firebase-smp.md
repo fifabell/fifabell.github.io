@@ -86,6 +86,8 @@ Notification 구성에 필요한 요소들을 받아 처리하는 함수.<br>
 [참고](https://popcorn16.tistory.com/69)
 <br>
 
+<br>
+
 # 2. 메시지 전송
 
 ## 1단계) 링크
@@ -164,6 +166,8 @@ LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
 }
 ```
 
+<br>
+
 # 3. BroadcastReceiver
 
 ## 1) 선언
@@ -208,6 +212,7 @@ public class SubActivity extends BaseActivity {
 //mMsg 쓰면 됨
 ```
 
+<br>
 
 # 4. 알림창 띄우기
 
