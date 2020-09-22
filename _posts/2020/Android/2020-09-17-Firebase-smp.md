@@ -492,8 +492,9 @@ public class AlertActivity extends BaseActivity {
 
 Alertmanager > pushNotification() 부분 보면 됨.
 
+<br>
 
-# 참고)
+# * 참고 *
 - post로 바로 보낼 때 서버토큰 api 키
 ![19](/assets/images/firebase/19.png)
 
