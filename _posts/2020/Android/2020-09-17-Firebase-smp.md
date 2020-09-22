@@ -506,8 +506,11 @@ PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
 @SuppressLint("InvalidWakeLockTag") PowerManager.WakeLock wakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK
         | PowerManager.ACQUIRE_CAUSES_WAKEUP, "TAG");
 wakeLock.acquire(3000);
+```
 
+- 알람 시 진동 울리기 
 
+```java
 // 알람이 울릴시 진동주기
 long[] pattern = {0, 500, 200, 400, 100};
 Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
