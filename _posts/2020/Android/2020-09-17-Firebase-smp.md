@@ -356,6 +356,9 @@ public class Alertmanager extends Context {
 
 in Alertmanager.java > startActivity(mMsg); > getIntent(msg); > AlertActivity.class intent
 
+manifest에 추가<br>
+<uses-permission android:name="android.permission.WAKE_LOCK" /><br>
+
 `AlertActivity.java`
 ```java
 public class AlertActivity extends BaseActivity {
