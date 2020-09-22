@@ -466,6 +466,7 @@ Alertmanager > pushNotification() 부분 보면 됨.
 ![19](/assets/images/firebase/19.png)
 
 - 화면 꺠우기 코드 
+
 ```java
 //푸시울렸을때 화면깨우기.
 PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
