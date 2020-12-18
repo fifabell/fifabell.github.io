@@ -1,5 +1,5 @@
 ---
-title:  "MSsql AtoZ"
+title:  "MSSQL AtoZ"
 excerpt: "mssql 팁"
 toc: true
 toc_sticky: true # 화면 넘어갈때 고정 여부
@@ -10,6 +10,13 @@ tag:
   - database
 last_modified_at: 2020-12-18T20:00:00+01:00
 ---
+
+<br>
+
+굳이 MSSQL를 국한시키는 것은 아니지만, <br>
+기본적인 것들을 제외하고, MSSQL를 실제로 사용하면서 겪었던 몰랐던 부분들이나 메모했으면 좋겠다고 생각했던 부분들을 나름대로 정리했다.<br>
+
+추가 업데이트는 계속 될 예정이다.<br>
 
 <br>
 
