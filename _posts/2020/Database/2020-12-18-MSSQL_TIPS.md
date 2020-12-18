@@ -1,5 +1,5 @@
 ---
-title:  "MSSQL AtoZ"
+title:  "MSsql AtoZ"
 excerpt: "mssql 팁"
 toc: true
 toc_sticky: true # 화면 넘어갈때 고정 여부
@@ -33,7 +33,6 @@ SELECT rows FROM sys.sysindexes WHERE id = OBJECT_ID('테이블명') AND indid <
 `THIS` : `현재 코드`와 , `BEFORE` : `직전코드`가 저장되어 있을 때. <br>
 
 ```sql
-
 SELECT * FROM CUR -- 현재 테이블 (PK,FK: CODE)
 SELECT * FROM HIS -- 히스토리 테이블 (THIS, BEFORE)
 
@@ -44,7 +43,6 @@ LEFT JOIN   HIS AS B ON A.CODE = B.BEFORE
 GROUP BY ISNULL(B.THIS,A.CODE)
 
 -- 직전코드에 코드가 있을 때 현재 코드로 바꿔줌으로써 전체 히스토리를 표시할 수 있음.
-
 ```
 
 ## 2. GROUP BY 여러 개
@@ -56,15 +54,17 @@ group by해서 나오는 데이터는 눈에 보이는 데이터 뿐만 아니�
 
 예를 들어,
 
-```SQL
+```sql
 SELECT AGE,COUNT(*) FROM MEMBER GROUP BY AGE 
 ```
+
 를 하게되면, 각 나이마다 멤버들이 몇 명인지 나올 것이다. <br>
 이를 단순히 이렇게되네.. 라고 생각하지 말고 저 숫자안에 MEMBER테이블의 나머지 아이들도 포함되어있다고 생각해야한다.<br>
 
 > 가입년도, 가입월 기준으로 나이의 평균을 구해보자 <br>
 
-```SQL
+
+```sql
 SELECT * FROM MEMBER -- (가입년도: YEAR, 가입월: MONTH)
 
 SELECT YEAR, MONTH, AVG(AGE)
@@ -83,7 +83,6 @@ mssql에는 임시테이블이라는 게 존재한다. <br>
 임시테이블을 만드는 2 가지 방법이 있으니 아래를 참고하자.
 
 ```sql
-
 -- 방법 1. 일반 테이블처럼 만들기
 CREATE #TEMP_TABLE (
     ENAME   VARCHAR(5),
@@ -102,7 +101,6 @@ FROM MEMBER
 -- MEMBER테이블이 #TEMP_TABLE 로 복사가 된다.
 
 -- 이 이후에는 #TEMP_TABLE을 마음대로 R,U,D할 수 있다.
-
 ```
 
 '#'이 하나면 지역임시테이블, 두 개면 전역임시테이블로 사용이 가능하고, <br>
@@ -112,7 +110,7 @@ FROM MEMBER
 
 ! 백문이 코드일견 ! <br>
 
-```SQL
+```sql
 SELECT 	
 	COUNT((CASE WHEN AGE < 30 THEN 1 ELSE NULL END)) '~20대',
 	COUNT((CASE WHEN AGE / 10 = 3 THEN 1 ELSE NULL END)) '30대',
@@ -125,12 +123,12 @@ FROM MEMBER
 
 ## 5. WITH (NOLOCK)
 0.속도개선에도 나오는 내용이지만, 중요해서 한 번 더 다뤄볼까 한다.<br>
-기본적으로 MSSQL은 SELECT시에 공유잠금이 걸린다. <br>
+기본적으로 MSsql은 SELECT시에 공유잠금이 걸린다. <br>
 공유잠금이 걸려있는 동안에는 CRUD가 진행되지 않는다.<br>
 
 이 때, SELECT 문에 WITH(NOLOCK)을 추가해주면 선행작업과 상관없이 바로 SELECT문이 수행된다.<br>
 
-```SQL
+```sql
 -- IN SELECT
 SELECT * FROM MEMBER WITH(NOLOCK) 
 
@@ -148,8 +146,7 @@ END
 
 ! 백문이 코드일견 ! <br>
 
-```SQL
-
+```sql
 -- 1) REPLACE
 --문법
 REPLACE('문자열','치환예정문자','치환할문자')
@@ -166,7 +163,6 @@ STUFF('ABCDEFG',2,3,'XXX')
 --예제
 SELECT STUFF (ENAME,2,2,'바보') AS '바보들' FROM MEMBER
 -- 모든이름 > 0바보 로 바꿈.
-
 ```
 
 ## 7. 세로 to 가로
@@ -178,18 +174,15 @@ SELECT STUFF (ENAME,2,2,'바보') AS '바보들' FROM MEMBER
 이런 데이터가 있다고 가정하자.<br>
 
 ```sql
-
 SELECT * FROM MEMBER
 --MEMBER에는 성(성별아님)을 저장하는 컬럼이 따로 있다. = SUNG
 SELECT SUNG FROM MEMBER -- '김','정','이','박' 등등..
-
 ```
 
 지금 이 테이블을 단순히 뽑게 되면 아래로 쭉 나올 것이다.<br>
 이 테이블을 '성'별로 컬럼을 나누어 가로로 보고 싶을 때 아래와 같이 하면 된다.<br>
 
-```SQL
-
+```sql
 SELECT 
     MAX(CASE WHEN SUNG = '김' THEN 데이터 ELSE 데이터 END) AS '김씨데이터',
     MAX(CASE WHEN SUNG = '정' THEN 데이터 ELSE 데이터 END) AS '정씨데이터',
@@ -197,6 +190,5 @@ SELECT
     MAX(CASE WHEN SUNG = '박' THEN 데이터 ELSE 데이터 END) AS '박씨데이터'
 FROM MEMBER    
 -- 데이터에 따라 집게함수는 달라질 수 있다.
-
 ```
 
