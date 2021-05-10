@@ -24,6 +24,7 @@ last_modified_at: 2021-05-10T20:00:00+01:00
 
 
 ## 1) 기본 방향
+
 - 기본 세팅은 android studio로 진행,
 - 세부 코딩은 vscode로 진행함.
 
@@ -35,17 +36,21 @@ pod repo update
 ```
 
 ## 2) 세팅
-1. 패키지 주소 확인
+
+### 1. 패키지 주소 확인
+
 - xcode에서 실행 (root/ios/Runner.Runnerxcworkspace)
 - 왼쪽 TARGETS > Runner > Bundle Identifier 칸에 패키지 주소가 있음.
 
 - 추가작업 : Signing에 Team 설정도 해줘야 함. 
 
-2. Firebase에서 ios 프로젝트 생성 / 세팅 (타 블로그에 많음)
+### 2. Firebase에서 ios 프로젝트 생성 / 세팅 (타 블로그에 많음)
+
 - xcode를 열었을 때, GoogleService-info.plist가 추가 안되있을 경우,
 Runner프로젝트 내 Runner폴더 우클릭 > Add Files to "Runner"를 클릭해서 해당 파일을 추가해줘야 함.
 
-3. 애플 개발자 세팅
+### 3. 애플 개발자 세팅
+
 - 개발자 만들기 (법인의 경우 승인까지 기간이 하루정도 소요됌.)
 - [TEAM ID](https://developer.apple.com/account/#/membership/)
 
@@ -66,7 +71,8 @@ Runner프로젝트 내 Runner폴더 우클릭 > Add Files to "Runner"를 클릭�
 - 키 업로드 
 - Firebase -> 톱니바퀴 -> 프로젝트 설정 -> 클라우드 메시징 -> apn 인증 키 -> 방금 받은 키 업로드
 
-4. Flutter 작업
+### 4. Flutter 작업
+
 - firebase_messaging 9.이상 패키지 추가
 - 기본 코드
 
@@ -204,4 +210,4 @@ token = await FirebaseMessaging.instance.getToken();
 // Example보면 ios는 getAPNSToken가 있지만, APNSToken으로는 fcm이 안날아감.
 ```
 
-6. fcm세팅 끝. fcm 테스트는 타 블로그를 참고하시면 됩니다 !
+* fcm세팅 끝. fcm 테스트는 타 블로그를 참고하시면 됩니다 !
