@@ -23,8 +23,19 @@ last_modified_at: 2021-03-16T20:00:00+01:00
 > flutter_local_notifications: 5.0.0+3
 
 
-## 1) 기본 방향
+## 1) 준비
 
+### 1. Android Studio를 권장한다.
+
+### 2. ios update
+flutter root에서 ios파일 업데이트 시 아래와 같은 명령어를 권장한다.
+
+```shell
+cd ios 
+pod repo update
+```
+
+### 3. 
 
 ### behind
 하도 삽질을 많이 해서 뭐가 더 있었던 것 같은데, 기억도 잘 안나네 ..
